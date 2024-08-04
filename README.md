@@ -4,8 +4,8 @@
 
 Effortlessly convert natural language prompts into SQL queries using state-of-the-art AI and NLP techniques.
 
-![Database Animation](https://media.giphy.com/media/xUOrw5a7OyeYf6HgA0/giphy.gif)
-![AI Animation](https://media.giphy.com/media/3o7TKPfXyC5lU8gPH2/giphy.gif)
+![Database Animation](https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif) <!-- Replace with actual database GIF URL -->
+![AI Animation](https://media.giphy.com/media/3o7TKPfXyC5lU8gPH2/giphy.gif) <!-- Replace with actual AI GIF URL -->
 
 ## Key Features
 - **NLP Processing:** Understands and processes user inputs to generate accurate SQL statements.
