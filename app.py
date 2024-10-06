@@ -131,7 +131,6 @@
 #         st.table(data)
 #     else:
 #         st.write("No data returned or query error.")
-
 import streamlit as st
 import sqlite3
 import os
@@ -202,8 +201,12 @@ st.image("logo.png", use_column_width=True, output_format="auto", caption="SQL u
 uploaded_file = st.file_uploader("Upload a .DB file", type=["db"])
 
 if uploaded_file:
-    # Load the SQLite database
-    conn = sqlite3.connect(uploaded_file)
+    # Save uploaded file temporarily to disk
+    with open("temp_db.db", "wb") as f:
+        f.write(uploaded_file.getbuffer())
+
+    # Load the SQLite database from the temporary file
+    conn = sqlite3.connect("temp_db.db")
     
     # Analyze the schema of the uploaded database
     schema_info = analyze_schema(conn)
